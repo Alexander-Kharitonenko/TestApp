@@ -1,0 +1,11 @@
+﻿@model ViewModel
+   
+
+<dv>
+    @{ 
+        foreach (var i in Model.AllItems) 
+        {
+            <h4>@i.Key - @i.Value</h4>
+        }
+    }
+</dv>

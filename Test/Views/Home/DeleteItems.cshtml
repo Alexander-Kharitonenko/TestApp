@@ -1,0 +1,12 @@
+﻿@model ViewModelForForm
+       
+    <div>
+        <form asp-action="DeleteItems" asp-controller="Home" method="post" asp-antiforgery="true">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-group">
+                <label asp-for="Name">Name for delete</label>
+                <input type="text" asp-for="Name" class="form-control" placeholder="Car name">
+            </div>
+            <button type="submit" class="btn btn-primary">Delete</button>
+        </form>
+    </div>
